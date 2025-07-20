@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: "CrowdQ API Gateway"
+  profiles:
+    active: "local"
+
+  data:
+    redis:
+      port: ${REDIS_PORT:6379}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus, circuitbreakers
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  metrics:
+    enable:
+      resilience4j.circuitbreaker.calls: true
+
+app:
+  version: "@project.version@"

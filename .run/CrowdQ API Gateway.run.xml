@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CrowdQ API Gateway" type="Application" factoryName="Application">
+    <option name="envFilePaths">
+      <option value="$PROJECT_DIR$/crowdq-infra/.env" />
+    </option>
+    <option name="MAIN_CLASS_NAME" value="es.pedrazamiguez.crowdq.apigateway.CrowdQApiGatewayApplication" />
+    <module name="crowdq-api-gateway" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

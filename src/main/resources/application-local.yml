@@ -72,12 +72,6 @@ spring:
                 redis-rate-limiter.burstCapacity: 20
                 key-resolver: "#{@userKeyResolver}"
 
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://localhost:59000/realms/crowdq
-
 resilience4j:
   circuitbreaker:
     instances:

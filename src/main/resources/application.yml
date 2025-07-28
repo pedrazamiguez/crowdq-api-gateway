@@ -8,6 +8,12 @@ spring:
     redis:
       port: ${REDIS_PORT:6379}
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cantalobos.isasecret.com/realms/crowdq
+
 management:
   endpoints:
     web:

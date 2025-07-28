@@ -58,9 +58,3 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 10
                 redis-rate-limiter.burstCapacity: 20
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://auth-service:8443/realms/crowdq
